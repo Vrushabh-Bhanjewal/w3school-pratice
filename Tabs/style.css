@@ -1,0 +1,52 @@
+.Tabs{
+    background-color: rgb(204, 227, 249);
+    width:100%;
+    text-align: left;
+    box-sizing: border-box;
+    overflow: hidden;
+    min-width: fit-content;
+}
+.Tabs button{
+    border:none;
+    background-color: inherit;
+    font-size: 1.1em;
+    padding:10px 15px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.tab button:hover {
+    background-color: rgb(25, 134, 223);
+    color:white;
+} 
+.tab button.active{
+    background-color: rgb(43, 45, 47);
+}
+
+
+.tabContent{
+    display:none; 
+    width:100%;
+    min-width: fit-content;
+    box-sizing: border-box;
+    padding: 5px 8px;
+    background-color:rgb(198, 199, 201) ;
+    animation: fadeEffect 1s;
+}
+@keyframes fadeEffect{
+    from{opacity :0;}
+    30%{ opacity:0.3;}
+    50%{ opacity: 0.5;}
+    70%{ opacity: 0.7;}
+    to{  opacity:1;}
+}
+h3{
+    margin:0;
+}
+p{
+    text-align: justify;
+    padding:10px 5px;
+    margin:0;
+}
+.fullTab{
+    width: 50%;
+}

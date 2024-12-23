@@ -1,0 +1,37 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    transition: all 0.3s;
+    overflow-y: hidden;
+}
+
+.tab {
+    display:inline;
+    width: 25.0008% ;
+    border:none;
+    outline:none;
+    padding:15px 29px;
+    background-color: inherit;
+    font:18px arial;
+    float:left;
+    border-radius: 0 0 5px 5px;
+}
+
+.tab:hover{
+    color:white;
+    background-color: rgb(192, 193, 194);
+}
+.tabContent{
+    width: 100%;
+    min-width: 200px;
+    padding:20px 10px;
+    text-align: center;
+    background-color: antiquewhite;
+    display:none;
+
+}
+#Tokyo{background-color: tomato; color:white}
+#London{background-color: skyblue;}
+#Paris{background-color: palegreen;}
+#Oslo{background-color: gray;color:white}

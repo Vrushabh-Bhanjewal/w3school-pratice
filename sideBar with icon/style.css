@@ -1,0 +1,36 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    & li{
+        display: flex;
+        justify-content: space-around;
+        width:100%;
+    }
+}
+.close-icon{
+    position: absolute;
+    right:10px;
+    top:10px;
+    font-size: 20px;
+}
+
+.sideBar{
+    position: fixed;
+    top:0;
+    width:0;
+    height: 100%;
+    overflow-x: hidden;
+    background-color: antiquewhite;
+
+    
+}

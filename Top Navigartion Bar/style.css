@@ -1,0 +1,29 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition:all ease 0.3s;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.nav{
+    background-color: rgb(215, 244, 196);
+    width:100%;
+}
+.nav a{
+    float:left;
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+    color:black;
+    padding:0.7em 0.9em;
+    width:fit-content
+}
+a:hover{
+    background-color: rgb(40, 132, 17);
+    color:white;
+}
+a.active{
+    background-color: rgb(44, 208, 35);
+    color:white;
+}

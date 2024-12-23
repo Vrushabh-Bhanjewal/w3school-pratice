@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    menu icon1
+    <div class ="menu1">
+    <div class="menui"></div>
+    <div class="menui"></div>
+    <div class="menui"></div>
+    </div>
+    menu icon 2 that change to cancel icon
+    <div class="menu2" onclick="changeIcon(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    <script>
+        function changeIcon(menuicon){
+            menuicon.classList.toggle("change")
+        }
+    </script>
+</body>
+</html>

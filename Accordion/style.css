@@ -1,0 +1,40 @@
+
+
+.accButton {
+    width: 50%;
+    padding:8px ;
+    outline:none;
+    text-align: left;
+    border:none;
+    font-size: 1.5em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: beige;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.active , .accButton:hover{
+    background-color: rgb(219, 240, 171);
+
+}
+
+.panel{
+    background-color: rgba(249, 252, 252, 0.995);
+    width:50%;
+    padding:0 8px;
+    max-height: 0;
+    /* display:none; */
+    box-sizing: border-box;
+    overflow:hidden;
+    transition :max-height 0.4s ease-in-out;
+}
+.accButton:after{
+    content:'\002B';
+    color:rgb(8, 0, 0);
+    float:right;
+}
+.active:after{
+    content: ">";
+    transform:rotate(270deg);
+    font-size:1em;
+    color:black
+}

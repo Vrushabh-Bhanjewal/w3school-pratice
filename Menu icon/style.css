@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(246, 241, 235);
+    overflow-x: hidden;
+}
+.menu1{
+    position:relative;
+    top:50%;
+    left:50%;
+}
+.menui{
+    width:35px;
+    height:5px;
+    background-color: black;
+    margin:6px 0;
+}
+
+
+
+.menu2{
+  
+    position:relative;
+    top:50%;
+    left:50%;
+}
+.bar1,.bar2,.bar3{
+    width:35px;
+    height:5px;
+    background-color: black;
+    margin:6px 0;
+    transition: 0.4s ;
+}
+.change .bar1{
+    transform: rotate(45deg) translate(3px ,12px);
+}
+.change .bar2{
+    visibility:hidden;
+    transition :0.1s;
+}
+.change .bar3{
+    transform:rotate(-45deg) translate(3px, -12px);
+}

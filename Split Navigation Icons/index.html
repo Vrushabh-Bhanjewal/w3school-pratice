@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/29663ef295.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="#" class="active navTab" onmouseover="hoverIcon(this) "><i class="fa-solid fa-house icon" ></i>Home</a>
+        <a href="#" class="navTab" onmouseover="hoverIcon(this)"><i class="fa-solid fa-newspaper icon" onmouseover="hoverIcon(this) "></i>News</a>
+        <a href="#" class="navTab" onmouseover="hoverIcon(this)"><i class="fa-solid fa-id-badge icon" onmouseover="hoverIcon(this) "></i>Contact</a>
+        <a href="#" class="split navTab" onmouseover="hoverIcon(this)"><i class="fa-solid fa-user icon" onmouseover="hoverIcon(this) "></i></i>About</a>
+    </div>
+    <script>
+        function hoverIcon(elem){
+            let i=0;
+            let navTab= document.getElementsByClassName("navTab");
+            var it = document.getElementsByClassName("navTab").firstChild.getElemetByClassName('icon');
+            console.log(it);
+            it.style.color="aquamarine";
+        }
+    </script>
+</body>
+</html>

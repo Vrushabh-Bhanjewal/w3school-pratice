@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow:hidden;
+    transition: all 0.3s ease;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.nav{
+    width:100%;
+    background-color: aquamarine;
+    
+}
+.nav a{
+    /* display:inline-block; */
+    padding:10px 15px;
+    text-decoration: none;
+    color:black;
+    font-size: 1em;
+    float:left;
+    border-radius: 5%;
+    text-align:center;
+}
+a i{
+    padding: 0 12px;
+    margin-top:-1px;
+    color:rgb(43, 42, 44);
+}
+a i:focus{ 
+    color:aquamarine;
+}
+.split{
+    float :right;
+}
+.nav a:hover{
+    color:white;
+    background-color: black;
+}
+.nav a .active{
+    color:white;
+    background-color: black;
+}
+
+.nav a i:hover{
+    color:aquamarine;
+}

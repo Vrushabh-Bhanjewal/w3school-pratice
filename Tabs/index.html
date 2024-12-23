@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="fullTab"> 
+    <div class="Tabs">
+        <button class="tab active" id="default" onclick="openSec(event, 'tab1')">Section1</button>
+        <button class="tab" onclick="openSec(event, 'tab2')">Section2</button>
+        <button class="tab" onclick="openSec(event, 'tab3')">Section3</button>
+    </div>
+
+    <div id='tab1' class="tabContent">
+        <h3>section1</h3>
+        <p>Create buttons to open specific tab content. All elements with class="tabcontent" are hidden by default (with CSS & JS). When the user clicks on a button - it will open the tab content that "matches" this button.</p>
+    </div>
+    <div id='tab2' class="tabContent">
+        <h3>section2</h3>
+        <p>Throughout the years, I’ve realized how common it is to feel like something is missing and
+            that there must be more behind everything. So many of us feel as though we have been given a
+            carcass of life, of meaning, that is covered by a blanket of falsity and ignorance.</p>
+    </div>
+    <div id='tab3' class="tabContent">
+        <h3>section3</h3>
+        <p>The essays originally appeared in video form on my YouTube channel, Pursuit of Wonder—
+            but the YouTube channel was originally formed out of a book that got rejected by publishers and
+            agents</p>
+    </div>
+    </div>
+
+    <script>
+        function openSec(event ,name){
+            var tab, tabContent,i;
+            tabContent =document.getElementsByClassName('tabContent');
+            for(i=0;i<tabContent.length; i++){
+                tabContent[i].style.display="none";
+            }
+            tab= document.getElementsByClassName('tab');
+            for(i=0;i<tab.length; i++){
+                tab[i].className = tab[i].className.replace(" active","");
+            }
+            console.log(tab,tabContent);
+            document.getElementById(name).style.display ="block";
+            event.currentTarget.className+=" active";
+
+            
+        }
+        document.getElementsById("default").click();
+    </script>
+</body>
+</html>

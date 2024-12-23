@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    transition:all 0.3s;
+    overflow: hidden;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.tab{
+    outline:none;
+    border:none;
+    width:25vw;
+    float:left;
+    padding:10px 15px;
+    font-size: 1em;
+    min-width: fit-content;
+    background-color: white;
+}
+.tab:hover{
+    background-color: black;
+    color:white;
+}
+.tabContent{
+    margin:20px 0;
+    padding:10px 15px;
+    width:100%;
+    text-align: justify;
+    display: none;
+    height:50vh;
+    min-height: fit-content;
+    color:white;
+}
+h2{
+    margin:40px 0; 
+    padding-bottom: 10px;;
+    border-bottom:3px solid white;
+    width:30%;
+}
+#Home{background-color: tomato;}
+#News{background-color:skyblue;color:black;}
+#Contact{background-color: palegreen; color:black}
+#About{background-color: gray;}
+

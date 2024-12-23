@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+        <a class= "active" href="#" onclick="change(this,'Home')">Home</a>
+        <a href="#" onclick="change(this,'News')">News</a>
+        <a href="#" onclick="change(this,'Contact')">Contact</a>
+        <a href="#" onclick="change(this,'About')">About</a>
+    </div>
+    <p id="para"></p>
+    <script>
+        function change(elem,name){
+            document.getElementById('para').innerHTML=name;
+            elem.style.className=" active";
+        }
+    </script>
+</body>
+</html>

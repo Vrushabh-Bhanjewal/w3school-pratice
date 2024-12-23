@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class ="main">
+    <div class="menuTab">
+        <h1 id="menuHeading">MENU</h1>
+        <input id="mySearch" type="text" placeholder="     Search..." onkeyup="searchkey()"/>
+        <ul id="menuOption">
+            <li><a href="#">Html</a></li>
+            <li><a href="#">React</a></li>
+            <li><a href="#">Angular</a></li>
+            <li><a href="#">Vue js</a></li>
+            <li><a href="#">Node js</a></li>
+            <li><a href="#">Next js</a></li>
+        </ul>
+    </div>
+    <div class="right">
+        <h1>Menu Content</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eligendi consequuntur alias dolor modi, nemo magni laborum adipisci ad reprehenderit sunt aspernatur reiciendis minus sit mollitia, 
+            quibusdam possimus molestiae maiores. Vitae eaque mollitia blanditiis culpa non accusamus incidunt doloribus a amet hic, voluptatibus adipisci consequuntur sequi cumque id ratione! Fugit, minima minus necessitatibus quis quos recusandae nesciunt debitis, facere placeat labore illo qui velit voluptates laboriosam aperiam mollitia, quibusdam aut hic beatae obcaecati! Quod repellendus voluptatem atque cumque, labore eum iusto rem, natus perspiciatis doloribus accusamus! Asperiores eligendi harum commodi autem architecto, hic rerum. Quo culpa delectus voluptates esse ad?</p>
+    </div>
+    </div>
+    <script>
+        function searchkey(elem){
+            let i,li,ul,input,f;
+            input= document.getElementById("mySearch");
+            f = input.value.toUpperCase();
+            console.log(f);
+            ul= document.getElementById("menuOption");
+            li= ul.getElementsByTagName("li"); 
+            for( i=0;i<li.length;i++){
+                a=li[i].getElementsByTagName("a")[0];
+                if(a.innerHTML.toUpperCase().indexOf(f) > -1){
+                    li[i].style.display ="";
+                }else{
+                    li[i].style.display= 'none';
+                }
+            }
+        }
+    </script>
+</body>
+</html>

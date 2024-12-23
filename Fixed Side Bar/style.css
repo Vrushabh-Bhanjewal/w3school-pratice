@@ -1,0 +1,25 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    height: 30%;
+    align-items: center;
+}
+.sideBar{
+position:fixed;
+top:0;
+left:0;
+height:100%;
+background-color: antiquewhite;
+width:10%;
+}
+.main{
+    margin-left:11%;
+}
