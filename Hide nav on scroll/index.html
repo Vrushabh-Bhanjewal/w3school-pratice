@@ -22,12 +22,12 @@
         </p>
     </div>
     <script>
-        window.onscroll= function(){scrollnav()}
-        function scrollnav(){
-            if(document.body.scrollTop >20 || document.documentElement.scrollTop > 20){
-                document.getElementsByClassName("nav")[0].style.top="0px"
+        let prev =window.pageYOffset;
+        window.onscroll=function(){
+            if(prev > window.pageYOffset){
+                document.getElementsByClassName("nav")[0].style.top="0";
             }else{
-                document.getElementsByClassName("nav")[0].style.top="-50px"
+                document.getElementsByClassName("nav")[0].style.top="-50px";
             }
         }
     </script>
